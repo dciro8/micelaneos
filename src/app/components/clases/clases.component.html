@@ -1,0 +1,49 @@
+
+<app-ngstyle></app-ngstyle>
+
+<div [ngClass]="'alert-primary'" class="alert" role="alert">
+  A simple primary alert—check it out!
+</div>
+
+<div [ngClass]="alerta" class="alert" role="alert">
+  A simple primary alert—check it out!
+</div>
+
+<button type="button" class="btn btn-info" (click)="alerta='alert-info'">
+  info
+</button>
+
+
+<button type="button" class="btn btn-success" (click)="alerta='alert-success'">
+  sucess
+</button>
+
+<h3 [ngClass]=" { 'text-danger' :danger, 'text-info' : !danger }">
+  HOla David Ciro
+</h3>
+
+<button type="button" class="btn" [ngClass]="{'btn-danger': danger, 'btn-info':!danger}" (click)="danger=!danger">
+  Cambiar
+</button>
+
+<br>
+<br>
+
+<h3 [appResaltado]="'orange'">Proceso asincrono</h3>
+<br>
+<br>
+
+<button [disabled]="loading" (click)="ejecutar()"  class="btn btn-primary" type="button" name="button">
+    <i [ngClass]="{'fa-save':!loading,'fa-refresh fa-spin':loading}"
+    
+     class="fa " ></i>
+     <span *ngIf="!loading">Guardar Cambios</span>
+     <span *ngIf="loading">Espere por Favor</span>
+</button>
+<br>
+<br>
+<h1 [appResaltado]="'orange'">Proceso asincrono</h1>
+<app-ng-swith></app-ng-swith>
+<br>
+<br>
+
