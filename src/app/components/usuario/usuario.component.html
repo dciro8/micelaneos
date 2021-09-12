@@ -1,1 +1,16 @@
-<p>usuario works!</p>
+<div class="row">
+<div class="col-md-12 text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+        <button type="button" class="btn btn-primary" [routerLink]="['nuevo']" routerLinkActive="router-link-active"  >Nuevo</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['editar']" routerLinkActive="router-link-active">Editar</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['detalle']" routerLinkActive="router-link-active">Detalle</button>
+        <!-- <button type="button" class="btn btn-primary" [routerLink]="['nuevo','/:parametro2']" routerLinkActive="router-link-active"  >Nuevo</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['editar','/:parametro3']" routerLinkActive="router-link-active">Editar</button>
+        <button type="button" class="btn btn-primary" [routerLink]="['detalle','/:parametro4']" routerLinkActive="router-link-active">Detalle</button> -->
+      </div>
+</div>
+
+</div>
+
+<router-outlet></router-outlet>

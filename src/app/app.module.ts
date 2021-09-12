@@ -12,7 +12,10 @@ import { ResaltadoDirective } from './Directives/resaltado.directive';
 import { NgSwithComponent } from './components/ng-swith/ng-swith.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
-import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo/usuario-nuevo.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+// import { UsuarioDetalleComponent } from './components/usuario/usuario-detalle/usuario-detalle.component';
+// import { UsuarioEditarComponent } from './components/usuario/usuario-editar/usuario-editar.component';
+// import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo/usuario-nuevo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo/usuari
     NgSwithComponent,
     HomeComponent,
     UsuarioComponent,
-    UsuarioNuevoComponent
+    NavBarComponent
+    // ,    UsuarioDetalleComponent
+    // ,    UsuarioEditarComponent
+    // ,UsuarioNuevoComponent
   ],
   imports: [
     BrowserModule,
